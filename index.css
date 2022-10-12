@@ -1,0 +1,276 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  top:0px;
+  left: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  /*COLORS*/
+  --Primary: #24a4c4;
+  --PrimaryDark: #036c85;
+  --PrimaryLight: #71c9de;
+  --Secondary: #ff9d29;
+  --AdjacentGreen: #21ce84;
+  --AdjacentBlue: #306ccb;
+  --Base: #f1f2f6;
+  --BaseDark: #e4e7ed;
+  --BaseSuperDark: #d3d7e2;
+  --White: #ffffff;
+  --BlackTextColor: #212121;
+  --BlackLightText: #737373;
+  --BlackDisabledText: #9e9e9e;
+}
+/*BACKGROUND COLOR*/
+.Lhbgcolor{
+  background-color : var(--BaseDark);
+}
+.callingBtnCol{
+  background-color: var(--BaseDark);
+  color: var(--PrimaryLight);
+}
+
+.statusCol{
+  color: var(--AdjacentGreen);
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: var(--backgroundColor);
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+
+/* ALIGNMENTS */
+.alignCntr {
+  align-items: center;
+}
+.alignEnd {
+  align-items: flex-end;
+}
+.justifySpaceEvenly{
+  justify-content: space-evenly;
+}
+.justifyCntr {
+  justify-content: center;
+}
+.justifyStart{
+  justify-content: start;
+}
+.justifyEnd {
+  justify-content: flex-end;
+}
+.textCntr {
+  text-align: center;
+}
+.textRight {
+  text-align: right;
+}
+.justifyBtwn {
+  justify-content: space-between;
+}
+
+/*FLEX*/
+.flexDiv{
+  display: flex;
+}
+.flexRow {
+  display: flex;
+  flex: none;
+  width: 100%;
+}
+
+.flexCol {
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* HEIGHT AND WIDTH  */
+
+.fullHeight {height: 100%;}
+.halfHeight{height: 50%;}
+.oneThirdHeight{height: 75%;}
+
+.heightFVH{height: 100vh;}
+.heightRAP{height: 92vh;}
+.heightLVH{height: 8vh;}
+.heightLREM{height: 2rem;}
+.heightMLREM{height: 8rem;}
+.heightSBX{height:2.5rem;}
+.heightLTREM{height: 1rem;}
+
+
+
+.fullWidth {width: 100%;}
+.halfWidth{width: 50%;}
+.oneThirdWidth{width: 75%;}
+.oneFourthWidth{width : 25%;}
+.wEP{width: 80%;}
+.wSP{width: 20%;}
+.widthGP{width:55%;}
+.widthP{width:45%;}
+.widthTAB{width:33%;}
+.widthLVW{width:8vw;}
+.widhtLREM{width:8rem;}
+.widthLREM{width:2rem;}
+.widthLTEM{width:1rem;}
+
+
+/* RESPONSIVE UTILITY CLASSES */
+.resColRow {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: none;
+}
+.resRowCol {
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+/* PADDING*/
+.pdngXXS  { padding: 0.25rem; }
+.pdngXS   { padding: 0.5rem; }
+.pdngSM   { padding: 0.75rem; }
+.pdngMD   { padding: 1.0rem }
+.pdngLG   { padding: 1.5rem; }
+.pdngLL { padding-left:5rem;}
+
+
+/* MARGINS ALL SIDES */
+.mrgnXXS  { margin: 0.25rem; }
+.mrgnXS   { margin: 0.5rem; }
+.mrgnSM   { margin: 0.75rem; }
+.mrgnMD   { margin: 1.0rem }
+.mrgnLG   { margin: 1.5rem; }
+
+/* MARGIN VERTICAL */
+.mrgnBtmSM { margin-bottom: 0.5rem; }
+.mrgnBtmMD { margin-bottom: 1.0rem; }
+.mrgnTSM { margin-top: 0.5rem; }
+.mrgnTMD { margin-top: 1.0rem; }
+.mrgnHAuto { margin: 0 auto; }
+.mrgnRSM { margin-right: 0.5rem; }
+.mrgnRXS { margin-right: 0.25rem; }
+
+
+/* Borders */
+
+.borderTLR{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+/*Extra Css */
+
+.headerIcon{
+  height: 6vh;
+  width: 8vw;
+}
+.userImage{
+  height: 2rem;
+  width : 2rem;
+  border-radius: 100%;
+}
+
+.LinkDiv{
+  height: 2rem;
+  width: 100%;
+}
+.FooterPage{
+  height: 92vh;
+}
+
+.LeftScreen{
+  background-color: var(--BaseDark);
+}
+.SpLink{
+  text-decoration: none;
+  padding:2rem 0 1.5rem 5rem;
+  color: var(--BlackTextColor);
+}
+.SpLinks{
+  color: var(--BlackTextColor);
+  text-decoration: none;
+}
+.grayscale { filter: grayscale(100%); }
+.iconHeightWidth{
+  height: 1rem;
+  width: 1rem;
+  margin-right: .5rem;
+}
+
+
+.rightActionsPage{
+  height: 92vh;
+  width:45%;
+}
+
+.SearchBar{
+  padding: 2rem;
+}
+
+.chatPage{
+  height: 92vh;
+  width: 55%;
+}
+.searchBox{
+  height: 2.5rem;
+  width : 100%;
+  outline: none;
+  border: 1px solid var(--BlackDisabledText);
+  border-radius: .2rem;
+}
+
+.chatImage{
+  height: 8rem;
+  width: 8rem;
+}
+
+.borderActive{
+    border-bottom: .3rem solid var(--AdjacentBlue);
+}
+
+.LL{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  width: 33%;
+}
+
+.addContact{
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.cnBtn{
+  border: none;
+  padding: .5rem;
+  background-color: white;
+  color: var(--AdjacentBlue);
+  font-size: 1rem;
+  cursor: pointer;
+}
